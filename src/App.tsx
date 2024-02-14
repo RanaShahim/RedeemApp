@@ -76,7 +76,7 @@ function App() {
                         src={`https://redeeming-romance.netlify.app/src/assets/images/${romanceRecord?.getImageUrl()}`}
                     ></img>
                 </div>
-                <p className="text">~~ {romanceRecord?.getTitle()} ~~</p>
+                <p className="text">~~@@ {romanceRecord?.getTitle()} ~~</p>
                 <p className="text">{`"${romanceRecord?.getQuote()}"`}</p>
                 <h3 className="text">{romanceRecord?.getRedeemedResult()}</h3>
                 {hasAlreadyRedeemed && (
