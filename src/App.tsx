@@ -72,10 +72,9 @@ function App() {
             <div className="card">
                 <h3 className="heading">Daily Romance</h3>
                 <div className="image">
-                    src=
-                    {`${
-                        import.meta.env.VITE_PUBLIC_URL
-                    }/assets/images/${romanceRecord?.getImageUrl()}`}
+                    <img
+                        src={`../src/assets/images/${romanceRecord?.getImageUrl()}`}
+                    ></img>
                 </div>
                 <p className="text">~~ {romanceRecord?.getTitle()} ~~</p>
                 <p className="text">{`"${romanceRecord?.getQuote()}"`}</p>
