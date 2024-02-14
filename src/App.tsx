@@ -66,7 +66,7 @@ function App() {
             resetState();
         }
     }, [hasAlreadyRedeemed]);
-
+    const imageUrl = romanceRecord?.getImageUrl();
     return (
         <>
             <div className="card">
@@ -74,10 +74,10 @@ function App() {
                 <div className="image">
                     <img
                         src={
-                            romanceRecord && romanceRecord.getImageUrl()
+                            imageUrl
                                 ? `${
                                       import.meta.env.VITE_PUBLIC_URL
-                                  }assets/images/${romanceRecord.getImageUrl()}`
+                                  }assets/images/${imageUrl}`
                                 : ''
                         }
                         alt="Romance Image"
