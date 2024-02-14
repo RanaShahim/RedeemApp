@@ -66,20 +66,16 @@ function App() {
             resetState();
         }
     }, [hasAlreadyRedeemed]);
-    const imageUrl = romanceRecord?.getImageUrl();
+
     return (
         <>
             <div className="card">
                 <h3 className="heading">Daily Romance</h3>
                 <div className="image">
                     <img
-                        src={
-                            imageUrl
-                                ? `${
-                                      import.meta.env.VITE_PUBLIC_URL
-                                  }assets/images/${imageUrl}`
-                                : ''
-                        }
+                        src={`${
+                            import.meta.env.BASE_URL
+                        }assets/images/${romanceRecord?.getImageUrl()}`}
                         alt="Romance Image"
                     />
                 </div>
