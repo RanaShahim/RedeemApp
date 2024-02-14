@@ -73,7 +73,7 @@ function App() {
                 <h3 className="heading">Daily Romance</h3>
                 <div className="image">
                     <img
-                        src={`https://redeeming-romance.netlify.app/src/assets/images/${romanceRecord?.getImageUrl()}`}
+                        src={`./src/assets/images/${romanceRecord?.getImageUrl()}`}
                     ></img>
                 </div>
                 <p className="text">~~ {romanceRecord?.getTitle()} ~~</p>
