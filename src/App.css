@@ -1,0 +1,49 @@
+.card {
+  max-width: 800px;
+  width: 90%;
+  height: 80vh;
+  background-color: #ead0da;
+  border-radius: 10px;
+  box-shadow: 10px 11px 53px 0px rgba(0, 0, 0, 0.75);
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: center;
+  color: #322f31;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px solid #f6f1f3;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 50%; /* Reduce the height for small screens */
+  object-fit: contain;
+}
+
+.image img {
+  border-radius: 10px;
+  max-width: 100%; /* Ensure the image scales down to fit the parent div */
+  max-height: 100%; /* Ensure the image scales down to fit the parent div */
+  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+}
+
+.text {
+  color: #322f31;
+  padding: 0px 25px 0px 25px;
+  font-style: italic;
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 20px; /* Add some space between the image and the text */
+}
