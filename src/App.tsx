@@ -73,8 +73,11 @@ function App() {
                 <h3 className="heading">Daily Romance</h3>
                 <div className="image">
                     <img
-                        src={`./src/assets/images/${romanceRecord?.getImageUrl()}`}
-                    ></img>
+                        src={`${
+                            import.meta.env.VITE_PUBLIC_URL
+                        }assets/images/${romanceRecord?.getImageUrl()}`}
+                        alt="Romance Image"
+                    />
                 </div>
                 <p className="text">~~ {romanceRecord?.getTitle()} ~~</p>
                 <p className="text">{`"${romanceRecord?.getQuote()}"`}</p>
