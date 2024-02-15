@@ -1,28 +1,28 @@
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #f6f1f3;
-  padding: 0px 10px 0px 10px;
-  margin: 0px 10px 0px 10px;
-  font-family: "Protest Riot", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #edbed1;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Protest Riot', sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .button {
-  border-radius: 10px;
-  color: #f6f1f3;
-  background-color: #843d58;
-  padding: 15px;
-  font-size: 17px;
-  box-shadow: 10px 11px 53px 0px rgba(0, 0, 0, 0.75);
-  font-family: "Protest Riot", sans-serif;
-  cursor: pointer;
-  border: none;
-  margin-top: 20px; /* Add some space between the text and the button */
-  width: 100%; /* Make the button full width */
+    border-radius: 10px;
+    color: #f6f1f3;
+    background-color: #843d58;
+    padding: 15px;
+    font-size: 17px;
+    box-shadow: 10px 11px 53px 0px rgba(0, 0, 0, 0.75);
+    font-family: 'Protest Riot', sans-serif;
+    cursor: pointer;
+    border: none;
+    margin-top: -7px; /* Add some space between the text and the button */
+    width: 100%; /* Make the button full width */
 }
