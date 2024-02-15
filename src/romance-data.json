@@ -1,58 +1,65 @@
 [
-  {
-    "id": "1",
-    "title": "My gorgeous chuchu 😍",
-    "quote": "To my beloved chuchu: You are my sunshine on the darkest days, my rock in the stormiest times, and my greatest joy every day.",
-    "redeemedResult": "💫💫💫 As Zoe Queen👑 pleases, Shahim has to dance on the song she suggests 🕺🕺",
-    "imageUrl": "couple-dancing.jpg"
-  },
-  {
-    "id": "2",
-    "title": "My smol janu maanu 😘",
-    "quote": "In your eyes, I found my home. In your heart, I found my love. In your soul, I found my mate.",
-    "redeemedResult": "💫💫💫 BEEEEP BEEEP, it's movie day - suggest one to Shahim please! 😘🍿🎥",
-    "imageUrl": "couple-movie.jpg"
-  },
-  {
-    "id": "3",
-    "title": "Meri chotu si bandar 🙈❤️",
-    "quote": "My love for you knows no bounds. It is timeless, eternal, and forever growing.",
-    "redeemedResult": "💫💫💫 Since chuchu is so amazing, Shahim needs to send chuchu chocolates or food of her choice today. 😋🍕🍫",
-    "imageUrl": "choco-food.jpg"
-  },
-  {
-    "id": "5",
-    "title": "My beautiful pineapple 🍍❤️",
-    "quote": "You are not just my wife; you are my best friend, my partner-in-crime, and my soulmate. I love you more than words can express.",
-    "redeemedResult": "💫💫💫 Since chuchu's so awesome, Shahim has to send her pictures of any food he eats the whole day. 🌯🍔",
-    "imageUrl": "couple-food-pic.jpg"
-  },
-  {
-    "id": "6",
-    "title": "Chuchu Donnnnnn 👌😍",
-    "quote": "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.",
-    "redeemedResult": "💫💫💫 Wowwwwww, it's a `Yes Chuchu` day today! 🎉💖😘",
-    "imageUrl": "yes-day.jpg"
-  },
-  {
-    "id": "7",
-    "title": "My Baby Chipkaali 🦎💘",
-    "quote": "You are the light that guides me, the strength that supports me, and the love that completes me. I am so grateful to have you as my wife.",
-    "redeemedResult": "💫💫💫 Cause Shahim's the worst singer ever, he needs to sing a song for chuchu today. 🎶🎤",
-    "imageUrl": "couple-singing.jpg"
-  },
-  {
-    "id": "8",
-    "title": "My Jiggu Piggu 💖😙",
-    "quote": "Every love story is beautiful, but ours is my favorite. Thank you for being my wife and for writing this beautiful story with me.",
-    "redeemedResult": "💫💫💫 Since Zoe's the love of Shahim's life, let's video call as we do random stuff 😘",
-    "imageUrl": "couple-video.jpg"
-  },
-  {
-    "id": "default",
-    "title": "Hello my beautiful Zoe Zafar 💖😙",
-    "quote": "Dil toh mera kerta hai chaand tor kay laadoon aapko, lekin filhaal apki dhair saari farmaishain hey puri kardoon?💖😘",
-    "redeemedResult": "Since you're the most amazing person ever, feel free to redeem an activity that you want me as your hubby to perform. You can only redeem once a day 🥰",
-    "imageUrl": "default.jpeg"
-  }
+    {
+        "id": "1",
+        "title": "My gorgeous chuchu 😍",
+        "quote": "To my beloved chuchu: You are my sunshine on the darkest days, my rock in the stormiest times, and my greatest joy every day.",
+        "redeemedResult": "💫💫💫 As Zoe Queen👑 pleases, Shahim has to dance on the song she suggests 🕺🕺",
+        "imageUrl": "couple-dancing.jpg",
+        "points": "4"
+    },
+    {
+        "id": "2",
+        "title": "My smol janu maanu 😘",
+        "quote": "In your eyes, I found my home. In your heart, I found my love. In your soul, I found my mate.",
+        "redeemedResult": "💫💫💫 BEEEEP BEEEP, it's movie day - suggest one to Shahim please! 😘🍿🎥",
+        "imageUrl": "couple-movie.jpg",
+        "points": "6"
+    },
+    {
+        "id": "3",
+        "title": "Meri chotu si bandar 🙈❤️",
+        "quote": "My love for you knows no bounds. It is timeless, eternal, and forever growing.",
+        "redeemedResult": "💫💫💫 Since chuchu is so amazing, Shahim needs to send chuchu chocolates or food of her choice today. 😋🍕🍫",
+        "imageUrl": "choco-food.jpg",
+        "points": "2"
+    },
+    {
+        "id": "5",
+        "title": "My beautiful pineapple 🍍❤️",
+        "quote": "You are not just my wife; you are my best friend, my partner-in-crime, and my soulmate. I love you more than words can express.",
+        "redeemedResult": "💫💫💫 Since chuchu's so awesome, Shahim has to send her pictures of any food he eats the whole day. 🌯🍔",
+        "imageUrl": "couple-food-pic.jpg",
+        "points": "5"
+    },
+    {
+        "id": "6",
+        "title": "Chuchu Donnnnnn 👌😍",
+        "quote": "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.",
+        "redeemedResult": "💫💫💫 Wowwwwww, it's a `Yes Chuchu` day today! 🎉💖😘",
+        "imageUrl": "yes-day.jpg",
+        "points": "3"
+    },
+    {
+        "id": "7",
+        "title": "My Baby Chipkaali 🦎💘",
+        "quote": "You are the light that guides me, the strength that supports me, and the love that completes me. I am so grateful to have you as my wife.",
+        "redeemedResult": "💫💫💫 Cause Shahim's the worst singer ever, he needs to sing a song for chuchu today. 🎶🎤",
+        "imageUrl": "couple-singing.jpg",
+        "points": "5"
+    },
+    {
+        "id": "8",
+        "title": "My Jiggu Piggu 💖😙",
+        "quote": "Every love story is beautiful, but ours is my favorite. Thank you for being my wife and for writing this beautiful story with me.",
+        "redeemedResult": "💫💫💫 Since Zoe's the love of Shahim's life, let's video call as we do random stuff 😘",
+        "imageUrl": "couple-video.jpg",
+        "points": "4"
+    },
+    {
+        "id": "default",
+        "title": "Hello my beautiful Zoe Zafar 💖😙",
+        "quote": "Dil toh mera kerta hai chaand tor kay laadoon aapko, lekin filhaal apki dhair saari farmaishain hey puri kardoon?💖😘",
+        "redeemedResult": "Since you're the most amazing person ever, feel free to redeem an activity that you want me as your hubby to perform. You can only redeem once a day 🥰",
+        "imageUrl": "default.jpeg"
+    }
 ]

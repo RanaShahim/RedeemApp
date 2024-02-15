@@ -1,7 +1,6 @@
 .card {
     max-width: 800px;
     width: 90%;
-    height: 100vh;
     padding: 10px;
     background-color: #ead0da;
     border-radius: 10px;
@@ -35,7 +34,7 @@
 
 .image img {
     border-radius: 10px;
-    max-width: 100%; /* Ensure the image scales down to fit the parent div */
+    max-width: 35%; /* Ensure the image scales down to fit the parent div */
     max-height: 100%; /* Ensure the image scales down to fit the parent div */
     object-fit: contain; /* Maintain aspect ratio and fit within the container */
 }

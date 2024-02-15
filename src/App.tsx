@@ -100,7 +100,7 @@ function App() {
                 <p className="text">{`"${romanceRecord?.getQuote()}"`}</p>
                 <h3 className="text">{romanceRecord?.getRedeemedResult()}</h3>
                 {hasAlreadyRedeemed && (
-                    <h3 className="text">😘Romance Points {totalPoints}😘</h3>
+                    <h3 className="text">😘 Romance Points {totalPoints} 😘</h3>
                 )}
                 {hasAlreadyRedeemed && (
                     <button className="button" onClick={toggleApplicationState}>
