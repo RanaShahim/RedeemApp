@@ -92,9 +92,7 @@ function App() {
             <div className="card">
                 <h3 className="heading">Daily Romance</h3>
                 <div className="image">
-                    <img
-                        src={`../public/images/${romanceRecord?.getImageUrl()}`}
-                    ></img>
+                    <img src={`./${romanceRecord?.getImageUrl()}`}></img>
                 </div>
                 <p className="text">~~ {romanceRecord?.getTitle()} ~~</p>
                 <p className="text">{`"${romanceRecord?.getQuote()}"`}</p>
