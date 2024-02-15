@@ -66,10 +66,11 @@ function App() {
         tomorrow.setDate(now.getDate() + 1);
         tomorrow.setHours(0, 0, 0, 0);
         const timeUntilTomorrow = tomorrow.getTime() - now.getTime();
+        console.log(timeUntilTomorrow);
         setTimeout(() => {
             setHasAlreadyRedeemed(true);
             localStorage.setItem('hasAlreadyRedeemed', JSON.stringify(true));
-        }, timeUntilTomorrow);
+        }, 4000);
     };
 
     const fetchRedeemableData = (): Romance[] => {
