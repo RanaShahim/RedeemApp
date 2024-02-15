@@ -69,7 +69,7 @@ function App() {
         setTimeout(() => {
             setHasAlreadyRedeemed(true);
             localStorage.setItem('hasAlreadyRedeemed', JSON.stringify(true));
-        }, 4000);
+        }, timeUntilTomorrow);
     };
 
     const fetchRedeemableData = (): Romance[] => {
