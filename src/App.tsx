@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import mapRomanceData from './mappers/rommanceMapper';
 import Romance from './classes/Romance';
+import { Blurhash } from 'react-blurhash';
 
 function App() {
     const [romanceRecord, setRomanceRecord] = useState<Romance | null>(null);
@@ -22,6 +23,9 @@ function App() {
         })(),
     );
 
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const [imageSrc, setImageSrc] = useState('');
+
     const setRomanceData = (): void => {
         const data = mapRomanceData();
         const defaultRecord = data.find(
@@ -37,10 +41,14 @@ function App() {
             //and then read and when the hasAlreadyRedeemed is set to true again and the default page appears line 18 is run to reset
             //the state. We can set the total the onclick event or here in the function.
             localStorage.setItem('totalPoints', totalPoints.toString());
+            setImageSrc(`./images/${newRecord?.getImageUrl()}`);
             setRomanceRecord(newRecord);
+            setImageLoaded(false);
         } else {
             if (defaultRecord) {
                 setRomanceRecord(defaultRecord);
+                setImageSrc(`./images/${defaultRecord?.getImageUrl()}`);
+                setImageLoaded(false);
             }
         }
     };
@@ -66,11 +74,10 @@ function App() {
         tomorrow.setDate(now.getDate() + 1);
         tomorrow.setHours(0, 0, 0, 0);
         const timeUntilTomorrow = tomorrow.getTime() - now.getTime();
-        console.log(timeUntilTomorrow);
         setTimeout(() => {
             setHasAlreadyRedeemed(true);
             localStorage.setItem('hasAlreadyRedeemed', JSON.stringify(true));
-        }, 4000);
+        }, timeUntilTomorrow);
     };
 
     const fetchRedeemableData = (): Romance[] => {
@@ -88,12 +95,31 @@ function App() {
         }
     }, [hasAlreadyRedeemed]);
 
+    //This useEffect always runs after the first one because setRomanceData updates the imageSrc.
+    useEffect(() => {
+        const img = new Image();
+        img.onload = () => {
+            setImageLoaded(true);
+        };
+        img.src = imageSrc;
+    }, [imageSrc]);
+
     return (
         <>
             <div className="card">
                 <h3 className="heading">Daily Romance</h3>
                 <div className="image">
-                    <img src={`./images/${romanceRecord?.getImageUrl()}`}></img>
+                    {!imageLoaded && (
+                        <Blurhash
+                            hash="LOE_:4%2O9WB~C-oM}WCjM%2V]ay"
+                            width={200}
+                            height={200}
+                            resolutionX={32}
+                            resolutionY={32}
+                            punch={1}
+                        ></Blurhash>
+                    )}
+                    {imageLoaded && <img src={imageSrc}></img>}
                 </div>
                 <p className="text">~~ {romanceRecord?.getTitle()} ~~</p>
                 <p className="text">{`"${romanceRecord?.getQuote()}"`}</p>
