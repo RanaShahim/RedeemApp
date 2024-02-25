@@ -74,6 +74,7 @@ function App() {
         tomorrow.setDate(now.getDate() + 1);
         tomorrow.setHours(0, 0, 0, 0);
         const timeUntilTomorrow = tomorrow.getTime() - now.getTime();
+        localStorage.setItem('resetTime', tomorrow.getTime().toString());
         setTimeout(() => {
             setHasAlreadyRedeemed(true);
             localStorage.setItem('hasAlreadyRedeemed', JSON.stringify(true));
@@ -103,6 +104,20 @@ function App() {
         };
         img.src = imageSrc;
     }, [imageSrc]);
+
+    useEffect(() => {
+        const storedResetTime = localStorage.getItem('resetTime');
+        const now = new Date().getTime();
+        // Check if the reset time has passed and reset the state if needed
+        if (storedResetTime && parseInt(storedResetTime, 10) <= now) {
+            setHasAlreadyRedeemed(true);
+            localStorage.setItem('hasAlreadyRedeemed', JSON.stringify(true));
+            resetState(); // Optionally, reset the state for the next day
+        } else {
+            // Schedule the resetState function for midnight
+            resetState();
+        }
+    }, []);
 
     return (
         <>
